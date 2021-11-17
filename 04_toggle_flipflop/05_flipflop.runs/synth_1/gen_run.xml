@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1637080290">
-  <File Type="PA-TCL" Name="dff.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="dff_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="dff_reports.tcl"/>
-  <File Type="RDS-RDS" Name="dff.vds"/>
-  <File Type="RDS-UTIL" Name="dff_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="dff_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="dff.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="dff_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="dff_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1637149772">
+  <File Type="PA-TCL" Name="cmb_clk.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="cmb_clk_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="cmb_clk_reports.tcl"/>
+  <File Type="RDS-RDS" Name="cmb_clk.vds"/>
+  <File Type="RDS-UTIL" Name="cmb_clk_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="cmb_clk_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="cmb_clk.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="cmb_clk_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="cmb_clk_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/dff.vhd">
@@ -19,7 +19,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="dff"/>
+      <Option Name="TopModule" Val="cmb_clk"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -36,9 +36,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

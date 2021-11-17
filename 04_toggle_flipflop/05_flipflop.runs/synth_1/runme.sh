@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/05_flipflop/05_flipflop.runs/synth_1'
+HD_PWD='C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/04_toggle_flipflop/05_flipflop.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log dff.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source dff.tcl
+EAStep vivado -log cmb_clk.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cmb_clk.tcl
