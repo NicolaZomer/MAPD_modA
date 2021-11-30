@@ -1,0 +1,12 @@
+
+{ 
+    crc :  373635222841700308  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto b2a4085a4c3240c2ac8781da9898bf25 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot tb_baud_gen_behav xil_defaultlib.tb_baud_gen" , 
+    buildDate : "Dec  6 2018" , 
+    buildTime : "23:39:36" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/tb_baud_gen_behav/xsimk\"   \"xsim.dir/tb_baud_gen_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/tb_baud_gen_behav/obj/xsim_1.lnx64.o\" -L\"/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Xilinx/Vivado/2018.3/lib/lnx64.o\" -lrdi_simulator_kernel  -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.srcs/sources_1/new/baud_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'baud_gen'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.srcs/sources_1/new/tb_baud_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_baud_gen'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.srcs/sources_1/new/tb_baud_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_baud_gen'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.srcs/sources_1/new/tb_baud_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_baud_gen'
