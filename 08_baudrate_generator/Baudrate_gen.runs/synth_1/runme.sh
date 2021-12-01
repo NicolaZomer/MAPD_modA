@@ -6,21 +6,25 @@
 # Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Xilinx/SDK/2018.3/bin:/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/lin64:/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Xilinx/Vivado/2018.3/bin
+  PATH=C:/Xilinx/SDK/2018.3/bin;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.3/bin
 else
-  PATH=/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Xilinx/SDK/2018.3/bin:/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/lin64:/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Xilinx/Vivado/2018.3/bin:$PATH
+  PATH=C:/Xilinx/SDK/2018.3/bin;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.3/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=
 else
-  LD_LIBRARY_PATH=/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.runs/synth_1'
+HD_PWD='C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/08_baudrate_generator/Baudrate_gen.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

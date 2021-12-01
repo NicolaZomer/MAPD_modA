@@ -1,9 +1,9 @@
-webtalk_init -webtalk_dir /home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.sim/sim_1/behav/xsim/xsim.dir/tb_baud_gen_behav/webtalk/
+webtalk_init -webtalk_dir C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/08_baudrate_generator/Baudrate_gen.sim/sim_1/behav/xsim/xsim.dir/tb_baud_gen_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Tue Nov 30 18:06:04 2021" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Wed Dec  1 13:29:57 2021" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.3 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2405991" -context "software_version_and_target_device"
-webtalk_add_data -client project -key os_platform -value "LIN64" -context "software_version_and_target_device"
+webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
 webtalk_add_data -client project -key registration_id -value "" -context "software_version_and_target_device"
 webtalk_add_data -client project -key tool_flow -value "xsim_vivado" -context "software_version_and_target_device"
 webtalk_add_data -client project -key beta -value "FALSE" -context "software_version_and_target_device"
@@ -12,13 +12,13 @@ webtalk_add_data -client project -key target_family -value "not_applicable" -con
 webtalk_add_data -client project -key target_device -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_package -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
-webtalk_add_data -client project -key random_id -value "ddf0ac3b-5afb-4c05-acf5-20612612b35e" -context "software_version_and_target_device"
+webtalk_add_data -client project -key random_id -value "97ead007-7b7d-4c7c-92b6-e1cce20f50c9" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "b2a4085a4c3240c2ac8781da9898bf25" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "6" -context "software_version_and_target_device"
-webtalk_add_data -client project -key os_name -value "Fedora" -context "user_environment"
-webtalk_add_data -client project -key os_release -value "Fedora release 32 (Thirty Two)" -context "user_environment"
-webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "2500.000 MHz" -context "user_environment"
+webtalk_add_data -client project -key project_iteration -value "18" -context "software_version_and_target_device"
+webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
+webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
+webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "1992 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
@@ -26,7 +26,7 @@ webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
 webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "2" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.05_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "114608_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 3776482460 -regid "" -xml /home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.sim/sim_1/behav/xsim/xsim.dir/tb_baud_gen_behav/webtalk/usage_statistics_ext_xsim.xml -html /home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.sim/sim_1/behav/xsim/xsim.dir/tb_baud_gen_behav/webtalk/usage_statistics_ext_xsim.html -wdm /home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.sim/sim_1/behav/xsim/xsim.dir/tb_baud_gen_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.16_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "7008_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 2933755329 -regid "" -xml C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/08_baudrate_generator/Baudrate_gen.sim/sim_1/behav/xsim/xsim.dir/tb_baud_gen_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/08_baudrate_generator/Baudrate_gen.sim/sim_1/behav/xsim/xsim.dir/tb_baud_gen_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/08_baudrate_generator/Baudrate_gen.sim/sim_1/behav/xsim/xsim.dir/tb_baud_gen_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

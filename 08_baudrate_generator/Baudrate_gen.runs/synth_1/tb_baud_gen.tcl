@@ -17,23 +17,20 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.cache/wt [current_project]
-set_property parent.project_path /home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/08_baudrate_generator/Baudrate_gen.cache/wt [current_project]
+set_property parent.project_path C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/08_baudrate_generator/Baudrate_gen.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo /home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/08_baudrate_generator/Baudrate_gen.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  /home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.srcs/sources_1/new/baud_gen.vhd
-  /home/ilazza/Documenti/UNIPD/ManagmentOfPhysicsDatasets/Laboratory/Lab6/Baudrate_gen/Baudrate_gen.srcs/sources_1/new/tb_baud_gen.vhd
+  C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/08_baudrate_generator/Baudrate_gen.srcs/sources_1/new/baud_gen.vhd
+  C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/08_baudrate_generator/Baudrate_gen.srcs/sources_1/new/tb_baud_gen.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
