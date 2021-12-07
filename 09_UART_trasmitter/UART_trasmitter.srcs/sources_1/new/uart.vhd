@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.std_logic_1164.all; -- entity
+use ieee.numeric_std.all;
 
 entity UART is
     port (clk, valid : in std_logic;
@@ -33,7 +34,7 @@ end UART;
 architecture rtl of UART is
 
 component baud_gen is
-  Port (clk   : in std_logic;
+  Port (clk  : in std_logic;
         baud_out   : out std_logic);
 end component;
 
@@ -55,12 +56,11 @@ begin
             if BAUD='1' then
                state <= STSTART;
                busy <= '1';
+            else 
+               state <= STIDLE;
             end if;
-            
+         
         else
-            state <= STIDLE;
-        end if;
-          
         case state is
                 when STSTART => -- items regarding state ST0 Z1 <= '0'; -- Moore output
 
@@ -129,7 +129,10 @@ begin
                         busy <= '0';
                         state <= STIDLE;
                     end if; 
+                when others => 
+                    state <= STIDLE;
          end case;
+         end if;
     end if;
 end process sync_proc;
 end UART;
