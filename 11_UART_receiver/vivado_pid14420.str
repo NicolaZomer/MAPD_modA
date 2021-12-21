@@ -1,0 +1,772 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 14420
+License: Customer
+
+Current time: 	Tue Dec 21 16:36:16 CET 2021
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 200 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Nicola
+User home directory: C:/Users/Nicola
+User working directory: C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Nicola/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Nicola/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Nicola/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/vivado.log
+Vivado journal file location: 	C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/vivado.jou
+Engine tmp dir: 	C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/.Xil/Vivado-14420-LAPTOP-FI2A30MP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 579 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Nicola\Documents\university\MSc_physics_of_data\S1_management_and_analysis_of_physics_dataset\lab_projects\11_UART_receiver\UART_receiver.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/UART_receiver.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/UART_receiver.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 600 MB. GUI used memory: 46 MB. Current time: 12/21/21, 4:36:18 PM CET
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 93 MB (+95128kb) [00:00:14]
+// [Engine Memory]: 614 MB (+492648kb) [00:00:14]
+// [GUI Memory]: 104 MB (+6627kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  3129 ms.
+// Project name: UART_receiver; location: C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 652.531 ; gain = 64.816 
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 646 MB (+1178kb) [00:00:18]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 683 MB (+4357kb) [00:00:21]
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 110 MB (+998kb) [00:00:26]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 210ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 1175 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART_receiver(rtl) (UART_receiver.vhd)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART_receiver(rtl) (UART_receiver.vhd)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART_receiver(rtl) (UART_receiver.vhd)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sampler_gen(rtl) (sampler_gen.vhd)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sampler_gen(rtl) (sampler_gen.vhd)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("sampler_gen.vhd", 85, 105); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 85, 105); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sampler_gen(rtl) (sampler_gen.vhd), p : pulse_gen(rtl) (pulse_gen.vhd)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sampler_gen(rtl) (sampler_gen.vhd), p : pulse_gen(rtl) (pulse_gen.vhd)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+// Elapsed time: 103 seconds
+selectCodeEditor("sampler_gen.vhd", 372, 122); // cl (w, cp)
+// Elapsed time: 254 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sampler_gen(rtl) (sampler_gen.vhd)]", 3); // B (D, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_gen.vhd", 3); // k (j, cp)
+// Elapsed time: 161 seconds
+selectCodeEditor("pulse_gen.vhd", 111, 248); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 702 MB. GUI used memory: 54 MB. Current time: 12/21/21, 5:06:18 PM CET
+// Elapsed time: 106 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectCodeEditor("sampler_gen.vhd", 204, 94); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 204, 94, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "sampler_gen.vhd", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_gen.vhd", 3); // k (j, cp)
+selectCodeEditor("pulse_gen.vhd", 345, 120); // cl (w, cp)
+selectCodeEditor("pulse_gen.vhd", 345, 120, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "pulse_gen.vhd", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 710 MB. GUI used memory: 56 MB. Current time: 12/21/21, 5:07:48 PM CET
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "delay_line"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/UART_receiver.srcs/sources_1/new/delay_line.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/UART_receiver.srcs/sources_1/new/delay_line.vhd 
+// [Engine Memory]: 726 MB (+9612kb) [00:31:51]
+// I (cp): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, delay_line(Behavioral) (delay_line.vhd)]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, delay_line(Behavioral) (delay_line.vhd)]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, delay_line(Behavioral) (delay_line.vhd)]", 12, false); // B (D, cp)
+selectCodeEditor("delay_line.vhd", 359, 225); // cl (w, cp)
+typeControlKey((HResource) null, "delay_line.vhd", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("UART_receiver.vhd", 295, 214); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 309, 250); // cl (w, cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("UART_receiver.vhd", 73, 186); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 249, 170); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 249, 178); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 247, 178); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 245, 173); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 101, 195); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 111, 200); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("UART_receiver.vhd", 272, 182); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("UART_receiver.vhd", 289, 224); // cl (w, cp)
+// Elapsed time: 60 seconds
+selectCodeEditor("UART_receiver.vhd", 409, 247); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 340, 271); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("sampler_gen.vhd", 245, 184); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 379, 211); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 304, 179); // cl (w, cp)
+typeControlKey((HResource) null, "sampler_gen.vhd", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 251, 53); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 227, 69); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 91, 90); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 261, 166); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 322, 222); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("UART_receiver.vhd", 168, 191); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectCodeEditor("sampler_gen.vhd", 125, 180); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_gen.vhd", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectCodeEditor("sampler_gen.vhd", 117, 118); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 117, 118, true, false, false, false, true); // cl (w, cp) - Shift Key - Double Click
+// Elapsed time: 13 seconds
+selectCodeEditor("sampler_gen.vhd", 205, 59); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 239, 186); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 346, 132); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+selectCodeEditor("sampler_gen.vhd", 568, 179); // cl (w, cp)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aL, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_gen.vhd", 3); // k (j, cp)
+selectCodeEditor("pulse_gen.vhd", 337, 143); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "delay_line.vhd", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectCodeEditor("sampler_gen.vhd", 363, 237); // cl (w, cp)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "delay_line.vhd", 4); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_gen.vhd", 3); // k (j, cp)
+selectCodeEditor("pulse_gen.vhd", 386, 89); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "delay_line.vhd", 4); // k (j, cp)
+// [GUI Memory]: 116 MB (+575kb) [00:39:12]
+// Elapsed time: 21 seconds
+selectCodeEditor("delay_line.vhd", 193, 362); // cl (w, cp)
+selectCodeEditor("delay_line.vhd", 164, 310); // cl (w, cp)
+selectCodeEditor("delay_line.vhd", 148, 302); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 171, 63); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 184, 56); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectCodeEditor("sampler_gen.vhd", 332, 279); // cl (w, cp)
+// Elapsed time: 72 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_gen.vhd", 3); // k (j, cp)
+// Elapsed time: 67 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "delay_line.vhd", 4); // k (j, cp)
+selectCodeEditor("delay_line.vhd", 79, 140); // cl (w, cp)
+// Elapsed time: 90 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 291, 200); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 246, 144); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 245, 79); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 71, 222); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 387, 265); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 387, 265); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_gen.vhd", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "delay_line.vhd", 4); // k (j, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 260, 250); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 248, 259); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "delay_line.vhd", 4); // k (j, cp)
+selectCodeEditor("delay_line.vhd", 280, 222); // cl (w, cp)
+selectCodeEditor("delay_line.vhd", 158, 206); // cl (w, cp)
+selectCodeEditor("delay_line.vhd", 285, 231); // cl (w, cp)
+selectCodeEditor("delay_line.vhd", 112, 200); // cl (w, cp)
+selectCodeEditor("delay_line.vhd", 267, 218); // cl (w, cp)
+typeControlKey((HResource) null, "delay_line.vhd", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 177, 213); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 162, 196); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 309, 267); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 94, 85); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 184, 247); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 184, 247); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 114, 280); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 102, 269); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("UART_receiver.vhd", 91, 292); // cl (w, cp)
+// Elapsed time: 64 seconds
+selectCodeEditor("UART_receiver.vhd", 108, 278); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 176, 242); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 412, 220); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 389, 226); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 264, 305); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 332, 102); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 179, 199); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 293, 209); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("UART_receiver.vhd", 299, 138); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("UART_receiver.vhd", 281, 178); // cl (w, cp)
+// Elapsed time: 44 seconds
+selectCodeEditor("UART_receiver.vhd", 153, 176); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 133, 195); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 45, 230); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 134, 218); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("UART_receiver.vhd", 303, 212); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 263, 134); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+// Elapsed time: 276 seconds
+selectCodeEditor("sampler_gen.vhd", 262, 205); // cl (w, cp)
+typeControlKey((HResource) null, "sampler_gen.vhd", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("sampler_gen.vhd", 184, 154); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 199, 274); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 241, 333); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 192, 357); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 207, 365); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 136, 333); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 150, 308); // cl (w, cp)
+// Elapsed time: 66 seconds
+selectCodeEditor("UART_receiver.vhd", 263, 207); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectCodeEditor("sampler_gen.vhd", 36, 199); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("sampler_gen.vhd", 162, 255); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 35, 208); // cl (w, cp)
+typeControlKey((HResource) null, "sampler_gen.vhd", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 239, 221); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 296, 217); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 93, 179); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 63, 122); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 100, 348); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 273, 361); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 189, 67); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 173, 150); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("UART_receiver.vhd", 230, 285); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 232, 309); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 521, 329); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 391, 324); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("UART_receiver.vhd", 464, 278); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("UART_receiver.vhd", 285, 194); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 71, 123); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 69, 371); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 67, 118); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("UART_receiver.vhd", 387, 325); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("UART_receiver.vhd", 428, 328); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 72, 262); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 159, 242); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("UART_receiver.vhd", 250, 271); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectCodeEditor("sampler_gen.vhd", 353, 146); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("sampler_gen.vhd", 38, 158); // cl (w, cp)
+typeControlKey((HResource) null, "sampler_gen.vhd", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 729 MB. GUI used memory: 53 MB. Current time: 12/21/21, 5:37:49 PM CET
+// Elapsed time: 10 seconds
+selectCodeEditor("UART_receiver.vhd", 123, 156); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("UART_receiver.vhd", 290, 159); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 355, 133); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectCodeEditor("sampler_gen.vhd", 358, 366); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectCodeEditor("sampler_gen.vhd", 183, 158); // cl (w, cp)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "sampler_gen.vhd", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 295, 272); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 295, 272); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 352, 234); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 456, 268); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 349, 237); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 349, 237, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("UART_receiver.vhd", 349, 237); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 402, 280); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 402, 280); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 238, 410); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "data"); // l (aT, cp)
+selectCodeEditor("UART_receiver.vhd", 246, 620); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 289, 627); // cl (w, cp)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aL, cp)
+selectCodeEditor("UART_receiver.vhd", 606, 223); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 303, 336); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 340, 340); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 310, 304); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 345, 322); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 295, 360); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 298, 289); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 182, 284); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 375, 449); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 586, 408); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("UART_receiver.vhd", 235, 430); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 249, 425); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 326, 433); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 296, 437); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 291, 429); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 383, 172); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 385, 222); // cl (w, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("UART_receiver.vhd", 353, 205); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("UART_receiver.vhd", 619, 436); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("UART_receiver.vhd", 643, 385); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 319, 108); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 326, 93); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("UART_receiver.vhd", 360, 172); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 356, 168); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 350, 156); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 360, 208); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("UART_receiver.vhd", 248, 294); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("UART_receiver.vhd", 261, 349); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("UART_receiver.vhd", 310, 256); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 300, 298); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 187, 316); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 385, 432); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("UART_receiver.vhd", 215, 210); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 222, 206); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 216, 204); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 479, 210); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 479, 210, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("UART_receiver.vhd", 470, 204); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 469, 200); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 398, 350); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 422, 493); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("UART_receiver.vhd", 400, 453); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 415, 347); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 345, 340); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 396, 358); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 346, 369); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 405, 267); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 349, 269); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 400, 407); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 350, 411); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 354, 501); // cl (w, cp)
+// Elapsed time: 45 seconds
+selectCodeEditor("UART_receiver.vhd", 384, 503); // cl (w, cp)
+selectCodeEditor("UART_receiver.vhd", 365, 509); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 15 seconds
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // af (cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Tue Dec 21 17:45:57 2021] Launched synth_1... Run output will be captured here: C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/UART_receiver.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_FAILED
+// ah (cp): Synthesis Failed: addNotify
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Failed"); // ah (cp)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 342, 92); // n (q, cp)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 9, 63); // n (q, cp)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 4, 69); // n (q, cp)
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 216, 118); // n (q, cp)
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectCodeEditor("sampler_gen.vhd", 334, 134); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 112, 117); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 389, 207); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 389, 207); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 378, 223); // cl (w, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk", true); // l (aT, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+selectCodeEditor("sampler_gen.vhd", 338, 342); // cl (w, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+selectCodeEditor("sampler_gen.vhd", 279, 345); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 347, 347); // cl (w, cp)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "clk"); // l (aT, cp)
+selectCodeEditor("sampler_gen.vhd", 246, 338); // cl (w, cp)
+selectCodeEditor("sampler_gen.vhd", 202, 348); // cl (w, cp)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aL, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // az (f, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // af (cp)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // af (cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Tue Dec 21 17:47:53 2021] Launched synth_1... Run output will be captured here: C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/UART_receiver.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectCodeEditor("sampler_gen.vhd", 427, 321); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 36 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Completed"); // ah (cp)
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 21 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "tb_UART_receiver"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/UART_receiver.srcs/sim_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/UART_receiver.srcs/sim_1/new 
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 28 seconds
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Add Sources"); // c (cp)
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bx (cp):  Add Simulation Sources  : addNotify
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: close [ open C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/UART_receiver.srcs/sim_1/new/tb_UART_receiver.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/11_UART_receiver/UART_receiver.srcs/sim_1/new/tb_UART_receiver.vhd 
+// I (cp): Define Module: addNotify
+dismissDialog("Add Simulation Sources"); // bx (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (C, J)
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// Elapsed time: 18 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_UART_receiver(Behavioral) (tb_UART_receiver.vhd)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, tb_UART_receiver(Behavioral) (tb_UART_receiver.vhd)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("tb_UART_receiver.vhd", 408, 292); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 287, 161); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 125, 90); // cl (w, cp)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 304, 228); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 272, 274); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("tb_UART_receiver.vhd", 143, 168); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 130, 156); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 159, 289); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectCodeEditor("UART_receiver.vhd", 60, 208); // cl (w, cp)
+typeControlKey((HResource) null, "UART_receiver.vhd", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_UART_receiver.vhd", 5); // k (j, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 288, 259); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 200, 354); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 202, 218); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 379, 219); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("tb_UART_receiver.vhd", 98, 236); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 574, 242); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 574, 242); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 148, 214); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 474, 240); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 72, 240); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 490, 239); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 271, 221); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 280, 221); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 301, 241); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 267, 226); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_UART_receiver.vhd", 468, 215); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 244, 247); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 119, 244); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 359, 268); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 534, 239); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 578, 243); // cl (w, cp)
+// Elapsed time: 17 seconds
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 543, 289); // cl (w, cp)
+// Elapsed time: 21 seconds
+selectCodeEditor("tb_UART_receiver.vhd", 428, 155); // cl (w, cp)
+// Elapsed time: 20 seconds
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 100, 168); // cl (w, cp)
+// Elapsed time: 39 seconds
+selectCodeEditor("tb_UART_receiver.vhd", 587, 342); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 192, 372); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("tb_UART_receiver.vhd", 486, 399); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 489, 387); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 398, 308); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 372, 250); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 76, 130); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 105, 161); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 126, 165); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 64, 186); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 133, 195); // cl (w, cp)
+// Elapsed time: 46 seconds
+selectCodeEditor("tb_UART_receiver.vhd", 301, 204); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 257, 235); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 112, 239); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("tb_UART_receiver.vhd", 277, 213); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 250, 178); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 327, 182); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "UART_receiver.vhd", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "sampler_gen.vhd", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "pulse_gen.vhd", 3); // k (j, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("pulse_gen.vhd", 462, 145); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "tb_UART_receiver.vhd", 5); // k (j, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 300, 248); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 309, 238); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("tb_UART_receiver.vhd", 408, 267); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 370, 233); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 360, 236); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 374, 242); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'c'); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "tb_UART_receiver.vhd", 'v'); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 288, 300); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 127, 58); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("tb_UART_receiver.vhd", 557, 125); // cl (w, cp)
+selectCodeEditor("tb_UART_receiver.vhd", 138, 73); // cl (w, cp)

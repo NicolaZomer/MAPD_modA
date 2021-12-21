@@ -29,6 +29,7 @@ set_property target_language VHDL [current_project]
 set_property ip_output_repo c:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/10_sampler_generator/sampler_gen.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
+  C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/10_sampler_generator/sampler_gen.srcs/sources_1/new/delay_line.vhd
   C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/10_sampler_generator/sampler_gen.srcs/sources_1/new/pulse_gen.vhd
   C:/Users/Nicola/Documents/university/MSc_physics_of_data/S1_management_and_analysis_of_physics_dataset/lab_projects/10_sampler_generator/sampler_gen.srcs/sources_1/new/sampler_gen.vhd
 }

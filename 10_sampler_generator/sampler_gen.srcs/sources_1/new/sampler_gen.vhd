@@ -6,9 +6,9 @@ entity sampler_gen is
     port (clk : in std_logic;
     data : in std_logic;
     enable : inout std_logic;
-    PULSE : inout std_logic);
+    PULSE : inout std_logic;
+    sampler_out: out std_logic);
 end sampler_gen;
-
 
 architecture rtl of sampler_gen is
 
@@ -16,6 +16,14 @@ component pulse_gen is
   Port (clk_p : in std_logic;
         enable_p : inout std_logic;
         pulse_out : out std_logic);
+end component;
+
+component delay_line is
+    port(
+        clk_d : in std_logic;
+        pulse_out: inout std_logic;
+        shift : out std_logic
+    );
 end component;
 
 type state_type is (ST0, ST1, ST2, ST3, ST4, ST5, ST6, ST7, STSTART, STSTOP, STIDLE);
@@ -26,6 +34,7 @@ signal PULSE_out: std_logic;
 begin
 
     p: pulse_gen port map(clk_p => clk, pulse_out => PULSE_out, enable_p => enable);
+    d: delay_line port map(clk_d => clk, shift => sampler_out);
   
     sync_proc : process(clk)
     

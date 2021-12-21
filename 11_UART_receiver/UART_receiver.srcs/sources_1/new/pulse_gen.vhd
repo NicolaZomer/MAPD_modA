@@ -1,8 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-
-
 entity pulse_gen is
   Port ( clk_p : in std_logic;
          pulse_out : out std_logic;
