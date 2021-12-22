@@ -25,21 +25,21 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity delay_line is
     port(
         clk_d : in std_logic;
-        pulse_out: inout std_logic;
+        pulse_in: in std_logic;
         shift : out std_logic
     );
 end delay_line;
 
 architecture Behavioral of delay_line is
 
-component pulse_gen is
-  Port (clk_p : in std_logic;
-        enable_p : inout std_logic;
-        pulse_out : out std_logic);
-end component;
+-- component pulse_gen is
+--   Port (clk_p : in std_logic;
+--         enable_p : inout std_logic;
+--         pulse_out : out std_logic);
+-- end component;
 
 begin
-    p: pulse_gen port map(clk_p => clk_d, pulse_out => pulse_out);
+    -- p: pulse_gen port map(clk_p => clk_d, pulse_out => pulse_out);
     
     shift_count : process (clk_d) is
         variable cnt : INTEGER RANGE 0 to 1023 := 435 ;
@@ -48,7 +48,7 @@ begin
     if rising_edge(clk_d) then
     -- rising clock edge
         cnt := cnt+1;
-        if pulse_out = '1' then 
+        if pulse_in = '1' then 
             cnt := 0;
         end if;
         

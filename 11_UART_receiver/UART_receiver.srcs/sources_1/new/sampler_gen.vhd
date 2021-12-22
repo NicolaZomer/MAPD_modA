@@ -21,7 +21,7 @@ end component;
 component delay_line is
     port(
         clk_d : in std_logic;
-        pulse_out: inout std_logic;
+        pulse_in: in std_logic;
         shift : out std_logic
     );
 end component;
@@ -29,27 +29,27 @@ end component;
 type state_type is (ST0, ST1, ST2, ST3, ST4, ST5, ST6, ST7, STSTART, STSTOP, STIDLE);
 signal state : state_type := STIDLE;
 
-signal PULSE_out: std_logic;
+-- signal PULSE_out: std_logic;
 
 begin
 
-    p: pulse_gen port map(clk_p => clk_s, pulse_out => PULSE_out, enable_p => enable);
-    d: delay_line port map(clk_d => clk_S, shift => sampler_out);
+    p: pulse_gen port map(clk_p => clk_s, pulse_out => PULSE, enable_p => enable);
+    d: delay_line port map(clk_d => clk_s, pulse_in => PULSE, shift => sampler_out);
   
     sync_proc : process(clk_s)
     
     begin
     
-    PULSE <= PULSE_out;
+    -- PULSE <= PULSE_out;
     
     if (rising_edge(clk_s)) then
          case state is
                 when STIDLE => 
+                    enable <= '0';
                     if data = '0' then 
                         enable <= '1';
                         state <= STSTART;
                     end if;
-                
                 
                 when STSTART => -- items regarding state STstart
                 

@@ -6,8 +6,6 @@ entity tb_UART_receiver is
 
 end tb_UART_receiver;
 
-
-
 architecture Behavioral of tb_UART_receiver is
 
 
@@ -21,12 +19,13 @@ component UART_receiver is
 end component UART_receiver;
 
 signal clk: std_logic; signal data_r: std_logic; -- input
+signal BAUD: std_logic; -- inout
 signal valid: std_logic;
 signal received_data: std_logic_vector(7 downto 0); -- output data
 
 begin
 
-    uut: UART_receiver port map (clk => clk, data_r => data_r , valid => valid, received_data => received_data);
+    uut: UART_receiver port map (clk => clk, data_r => data_r , valid => valid, BAUD => BAUD, received_data => received_data);
 
 
        p_clk : process

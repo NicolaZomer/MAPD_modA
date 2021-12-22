@@ -16,7 +16,7 @@ begin -- process baudge
  
 if rising_edge(clk_p) then
  -- rising clock edge
-    if enable_p = '1' then
+    --if enable_p = '1' then
         if cnt = 867 then
             pulse_out <= '1';
             cnt := 0;
@@ -24,7 +24,7 @@ if rising_edge(clk_p) then
             pulse_out <= '0';
             cnt := cnt +1 ;
         end if;
-    end if;
+    --end if;
 end if;
 
 end process baudgen;
